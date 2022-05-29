@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+
+$primaryBlue: hsl(215, 51%, 70%);
+$primaryCyan: hsl(178, 100%, 50%);
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+div.card {
+  padding: 20px;
+  height: auto;
+  width: 282px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .card-description {
+    color: $primaryBlue;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .card-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    .card-image {
+      border-radius: 10px;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .card-image:hover {
+      opacity: 0;
+    }
+
+    .card-overlay {
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.2s ease-in-out;
+      background: rgba(178, 100%, 100%, 0.55);
+    }
+
+    .card-overlay:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .card-view-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+  .card-header {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .card-header:hover {
+    color: hsl(178, 100%, 50%);
+  }
+  .card-border {
+    background-color: hsl(215, 32%, 27%);
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px;
+    .card-amount {
+      color: $primaryCyan;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      .card-amount-icon {
+        height: 20px;
+        width: auto;
+        margin-right: 5px;
+      }
+    }
+    .card-time {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90px;
+      .card-clock {
+        margin-right: 0px;
+      }
+      .card-time-text {
+        margin: 0;
+        font-size: 14px;
+        color: hsl(215, 51%, 70%);
+        font-weight: 300;
+      }
+    }
+  }
+  .card-line {
+    background-color: hsl(215, 32%, 27%);
+    color: hsl(215, 32%, 27%);
+    height: 2px;
+    border-width: 0;
+  }
+
+  .card-creator {
+    display: flex;
+    align-items: center;
+    .card-creator-avatar {
+      width: 25px;
+      height: 25px;
+      border: 1px solid white;
+      border-radius: 100%;
+      margin-right: 16px;
+    }
+    .card-creator-text-container {
+    }
+    .card-creator-text {
+      margin: 10px 0px;
+      display: inline-block;
+      color: hsl(215, 51%, 70%);
+    }
+    .creator {
+      text-decoration: none;
+    }
+    .creator:hover {
+      color: hsl(178, 100%, 50%);
+    }
+  }
+}
