@@ -45,7 +45,7 @@ Users should be able to:
 
 Use of HTML semantic tags is important especially for screen readers and also readability of content for other authors.
 
-The use of <h1> to <h6> tags should be in order of importance.
+The use of `<h1>` to `<h6>` tags should be in order of importance.
 
 Place extra importance on CSS properties such as display and position, and also on concepts such as grid and flexbox as they will be particularly important. I struggled to align certain rows like the Ethereum logo and "0.041 ETH".
 
