@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap");
+body {
+  background-color: #0d192b;
+  font-family: 'Outfit', sans-serif;
+}
+
+div.card {
+  padding: 20px;
+  height: auto;
+  width: 282px;
+  background-color: #14253d;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.card .card-description {
+  color: #8bacda;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+div.card .card-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+div.card .card-container .card-image {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+div.card .card-container .card-image:hover {
+  opacity: 0;
+}
+
+div.card .card-container .card-overlay {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background: rgba(178, 255, 255, 0.55);
+}
+
+div.card .card-container .card-overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+div.card .card-container .card-view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div.card .card-header {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+div.card .card-header:hover {
+  color: #00fff7;
+}
+
+div.card .card-border {
+  background-color: #2f415b;
+}
+
+div.card .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0px;
+}
+
+div.card .card-info .card-amount {
+  color: #00fff7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+}
+
+div.card .card-info .card-amount .card-amount-icon {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+}
+
+div.card .card-info .card-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90px;
+}
+
+div.card .card-info .card-time .card-clock {
+  margin-right: 0px;
+}
+
+div.card .card-info .card-time .card-time-text {
+  margin: 0;
+  font-size: 14px;
+  color: #8bacda;
+  font-weight: 300;
+}
+
+div.card .card-line {
+  background-color: #2f415b;
+  color: #2f415b;
+  height: 2px;
+  border-width: 0;
+}
+
+div.card .card-creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.card .card-creator .card-creator-avatar {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+div.card .card-creator .card-creator-text {
+  margin: 10px 0px;
+  display: inline-block;
+  color: #8bacda;
+}
+
+div.card .card-creator .creator {
+  text-decoration: none;
+}
+
+div.card .card-creator .creator:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=style.css.map */
